@@ -1,0 +1,9 @@
+// 결과값으로 가져온 Map을 다시 파라미터로 사용할 때, NULL 값으로 인한 오류가 있어 널 처리를 해주었다.
+// 서버, DB에서의 NULL 처리도 고려해 볼만하다.
+
+for(var key in $resultMap){
+	if($resultMap[key] == null){
+		$resultMap[key] = "";
+	}
+}
+						}
